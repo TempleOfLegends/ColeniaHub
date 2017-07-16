@@ -90,7 +90,7 @@ public class ColeniaHub extends JavaPlugin implements Listener{
 		
 	}
 	
-public static Inventory hub = Bukkit.createInventory(null, 9, "§3§lColenia Hub");
+public static Inventory hub = Bukkit.createInventory(null, 9, "Â§3Â§lColenia Hub");
 	
 	
 	static {
@@ -180,7 +180,7 @@ public static Inventory hub = Bukkit.createInventory(null, 9, "§3§lColenia Hub")
 			event.setCancelled(true);
 			
 			for (Player p : allStaff) {
-				p.sendMessage(ChatColor.WHITE + "[" + ChatColor.LIGHT_PURPLE + "S" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "§"));
+				p.sendMessage(ChatColor.WHITE + "[" + ChatColor.LIGHT_PURPLE + "S" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "Â§"));
 				
 			}
 			
@@ -190,7 +190,7 @@ public static Inventory hub = Bukkit.createInventory(null, 9, "§3§lColenia Hub")
 			
 			event.setCancelled(true);
 			for (Player p: op) {
-			p.sendMessage(ChatColor.WHITE + "[" + ChatColor.RED + "OP" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "§"));
+			p.sendMessage(ChatColor.WHITE + "[" + ChatColor.RED + "OP" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "Â§"));
 			}
 			
 			event.setCancelled(true);
@@ -201,11 +201,11 @@ public static Inventory hub = Bukkit.createInventory(null, 9, "§3§lColenia Hub")
 		if (!(player.hasPermission("coleniaHub.chatStaff"))) {
  
 		for (Player all : Bukkit.getOnlinePlayers()) {
-			all.sendMessage(ChatColor.WHITE + "[" + ChatColor.BLUE + "G" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "§"));
+			all.sendMessage(ChatColor.WHITE + "[" + ChatColor.BLUE + "G" + ChatColor.WHITE + "] " + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "Â§"));
 	 }
 		}else {
 			for (Player all: Bukkit.getOnlinePlayers()) {
-			all.sendMessage(ChatColor.WHITE + "[" + ChatColor.BLUE + "G" + ChatColor.WHITE + "] " + ChatColor.RED + ChatColor.BOLD + "STAFF " + ChatColor.RESET + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "§"));
+			all.sendMessage(ChatColor.WHITE + "[" + ChatColor.BLUE + "G" + ChatColor.WHITE + "] " + ChatColor.RED + ChatColor.BOLD + "STAFF " + ChatColor.RESET + ChatColor.GOLD + player.getName() + ChatColor.DARK_GRAY + "" + ChatColor.BOLD + " >> " + ChatColor.WHITE + event.getMessage().replaceAll("&", "Â§"));
 	}
 		}
 	}
@@ -245,7 +245,7 @@ public boolean onCommand(CommandSender sender, Command cmd, String label, String
 			}
 			if (args.length > 0) {
 				
-			Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.DARK_AQUA + "Colenia" + ChatColor.AQUA + "Radio" + ChatColor.GRAY + "] " + ChatColor.GOLD + message.replaceAll("&", "§"));
+			Bukkit.getServer().broadcastMessage(ChatColor.GRAY + "[" + ChatColor.DARK_AQUA + "Colenia" + ChatColor.AQUA + "Radio" + ChatColor.GRAY + "] " + ChatColor.GOLD + message.replaceAll("&", "Â§"));
 			}
 			
 		}
