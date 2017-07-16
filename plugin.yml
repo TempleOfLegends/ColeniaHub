@@ -1,0 +1,22 @@
+name: ColeniaHub
+main: me.templeoflegends.ColeniaHub
+version: 1.0
+commands:
+   selector:
+      description: Get another server selector!
+      usage: /<command>
+   coleniaradio:
+      description: Broadcast a message.
+      usage: /<command>
+   cr:
+      description: Broadcast a message.
+      usage: /<command>
+   setspawn:
+      description: Set the spawn.
+      usage: /<command>
+   spawn:
+      description: Go to spawn.
+      usage: /<command>
+   chat:
+      description: Join a chat channel.
+      usage: /<command>
